@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background: #eee;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 786px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+.nav-brand {
+  flex-grow: 1;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-items {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 250ms;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+}
+
+.link-button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #663399;
+}
+
+.link-button-primary {
+  background: #663399;
+  color: white;
+}
+
+/* split section */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+@media (max-width: 786px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.split-title {
+  font-size: 42px;
+}
+
+.split img {
+  height: 100%;
+  width: 100%;
+}
+
+/* PRICING */
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.pricing-card {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #ccc;
+  text-align: center;
+}
+
+.pricing-card:hover {
+  box-shadow: 3px 3px 5px #ccc;
+  transform: translateY(-2px);
+}
+
+.price-title {
+  text-align: center;
+  font-weight: 300;
+}
+
+.price-features {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.price {
+  text-align: center;
+  font-size: 54px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #663399;
+  font-size: 16px;
+}
+
+.button-primary {
+  background-color: #663399;
+  color: white;
+}
